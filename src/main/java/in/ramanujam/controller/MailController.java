@@ -22,27 +22,27 @@ public class MailController {
     @Autowired
     private MailRequestToMessageConverter mailRequestToMessageConverter;
 
-//    @RequestMapping(value = "/mailtest", method = RequestMethod.GET)
-//    public MailResponse testSend() {
-//        MailRequest request = new MailRequest();
-//        request.setBody("Test Body");
-//        request.setSender("romach007@gmail.com");
-//        request.setSubject("testSubject");
-//        request.setToList(Arrays.asList("romach007@gmail.com", "anatolii.stepaniuk@gmail.com"));
-//
-//        MailResponse response = new MailResponse();
-//        System.out.println("mail route was touched");
-//
-//        try {
-//            MailMessage message = mailRequestToMessageConverter.convert(request);
-//            mailMQPublisherService.publishMailMessage(message);
-//            response.setStatus(ResponseStatusType.SUCCESS.getValue());
-//
-//        } catch(Exception e){
-//            response.setStatus(ResponseStatusType.FAILURE.getValue());
-//        }
-//        return response;
-//    }
+    @RequestMapping(value = "/mailtest", method = RequestMethod.GET)
+    public MailResponse testSend() {
+        MailRequest request = new MailRequest();
+        request.setBody("Test Body");
+        request.setSender("romach007@gmail.com");
+        request.setSubject("testSubject");
+        request.setToList(Arrays.asList("romach007@gmail.com", "anatolii.stepaniuk@gmail.com"));
+
+        MailResponse response = new MailResponse();
+        System.out.println("mail route was touched");
+
+        try {
+            MailMessage message = mailRequestToMessageConverter.convert(request);
+            mailMQPublisherService.publishMailMessage(message);
+            response.setStatus(ResponseStatusType.SUCCESS.getValue());
+
+        } catch(Exception e){
+            response.setStatus(ResponseStatusType.FAILURE.getValue());
+        }
+        return response;
+    }
 
 
     @RequestMapping(value = "/mail", method = RequestMethod.POST)

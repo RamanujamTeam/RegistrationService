@@ -12,7 +12,7 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan(basePackages = {"in.ramunajam"})
+@ComponentScan(basePackages = {"in.ramanujam"})
 public class Application {
 
     public static void main(String[] args) {
