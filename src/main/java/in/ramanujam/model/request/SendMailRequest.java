@@ -4,7 +4,7 @@ package in.ramanujam.model.request;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MailRequest {
+public class SendMailRequest {
 
     private String sender;
     private String replyTo;

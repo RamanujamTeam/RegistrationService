@@ -1,4 +1,4 @@
-package in.ramanujam.service.queue.model;
+package in.ramanujam.service.messaging.queue.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;

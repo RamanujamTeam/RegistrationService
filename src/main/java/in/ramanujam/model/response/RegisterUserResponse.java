@@ -1,7 +1,7 @@
 package in.ramanujam.model.response;
 
 
-public class MailResponse {
+public class RegisterUserResponse { // TODO: do we need separate classses for SendEmailResponse and RegisterUserResponse
 
     private String status;
 

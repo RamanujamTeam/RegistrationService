@@ -1,8 +1,8 @@
-package in.ramanujam.service.mail.impl;
+package in.ramanujam.service.messaging.mail.impl;
 
 
-import in.ramanujam.service.mail.MailSenderService;
-import in.ramanujam.service.queue.model.MailMessage;
+import in.ramanujam.service.messaging.mail.MailSenderService;
+import in.ramanujam.service.messaging.queue.model.MailMessage;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

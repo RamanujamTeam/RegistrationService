@@ -8,10 +8,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
 @Configuration
 @EnableAutoConfiguration
+@EnableJpaRepositories
 @ComponentScan(basePackages = {"in.ramanujam"})
 public class Application {
 
@@ -29,3 +31,4 @@ public class Application {
         return builder;
     }
 }
+// TODO: http://www.mkyong.com/spring/spring-embedded-database-examples/

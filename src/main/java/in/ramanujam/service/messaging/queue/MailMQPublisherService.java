@@ -1,6 +1,6 @@
-package in.ramanujam.service.queue;
+package in.ramanujam.service.messaging.queue;
 
-import in.ramanujam.service.queue.model.MailMessage;
+import in.ramanujam.service.messaging.queue.model.MailMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

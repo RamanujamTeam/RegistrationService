@@ -1,13 +1,13 @@
 package in.ramanujam.service.converter;
 
-import in.ramanujam.model.request.MailRequest;
-import in.ramanujam.service.queue.model.MailMessage;
+import in.ramanujam.model.request.SendMailRequest;
+import in.ramanujam.service.messaging.queue.model.MailMessage;
 import org.springframework.stereotype.Component;
 
 @Component
 public class MailRequestToMessageConverter {
 
-    public MailMessage convert(MailRequest request) {
+    public MailMessage convert(SendMailRequest request) {
         MailMessage mailMessage = new MailMessage();
         mailMessage.setSubject(request.getSubject());
         mailMessage.setSender(request.getSender());
