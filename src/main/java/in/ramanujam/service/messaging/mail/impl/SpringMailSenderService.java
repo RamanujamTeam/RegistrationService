@@ -44,7 +44,7 @@ public class SpringMailSenderService implements MailSenderService {
             mimeMessageHelper.setSubject(mailMessage.getSubject());
             javaMailSender.send(mimeMessageHelper.getMimeMessage());
 
-        } catch (UnsupportedEncodingException | MessagingException exception) {
+        } catch (UnsupportedEncodingException | MessagingException exception) { // TODO: we can use the error info here to show user
             logger.error("error occured while sending mail", exception);
         }
     }
