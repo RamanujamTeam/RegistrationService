@@ -10,12 +10,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @Configuration
 @EnableAutoConfiguration
 @EnableJpaRepositories
 @ComponentScan(basePackages = {"in.ramanujam"})
-public class Application {
+public class Application extends WebMvcConfigurerAdapter {
 
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(Application.class);
@@ -31,4 +32,3 @@ public class Application {
         return builder;
     }
 }
-// TODO: http://www.mkyong.com/spring/spring-embedded-database-examples/

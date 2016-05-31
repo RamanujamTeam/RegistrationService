@@ -1,6 +1,6 @@
 package in.ramanujam.model.request;
 
-public class RegisterUserRequest { // TODO change it according to user registering
+public class RegisterUserRequest {
 
     private String email;
     private String password;

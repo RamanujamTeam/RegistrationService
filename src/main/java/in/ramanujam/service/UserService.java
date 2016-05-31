@@ -20,7 +20,7 @@ public class UserService {
     private MailMQPublisherService mailMQPublisherService;
 
     public void registerUser(User user) { // TODO: additional - we can hash the password before saving
-        repository.save(user);        //TODO: test
+        repository.save(user);
     }
 
     public void sendConfirmationLink( User user ) {
@@ -48,7 +48,7 @@ public class UserService {
     }
 
     public void confirmEmail(String email, String confirmationCode) { //TODO it should throw exception if confirmationCodeDoes not match
-        User user = repository.findOne(email); // TODO test
+        User user = repository.findOne(email);
         if(user == null)
             throw new RuntimeException("User with email: " + email + " not found");
         if(!confirmationCode.equals(user.getConfirmationCode()))
