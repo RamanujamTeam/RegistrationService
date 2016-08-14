@@ -15,7 +15,6 @@ Technologies that should be used in this project:
 You need to build a microservice for users registration. Navigate to http://localhost:8080/registration
 
 ![Screenshot1](https://raw.githubusercontent.com/RamanujamTeam/RegistrationService/master/src/main/resources/img/1.png)
-![Screenshot1](https://raw.githubusercontent.com/RamanujamTeam/RegistrationService/master/src/main/resources/img/1.png)
 
 You can see in the right corner a lonely button "Sign Up" from Skeleton CSS framework that will still be at the right on mobile device.
 
