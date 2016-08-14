@@ -23,6 +23,7 @@ After clicking this button the page should not reload (single page design) and t
 ![Screenshot2](https://raw.githubusercontent.com/RamanujamTeam/RegistrationService/master/src/main/resources/img/2.png)
 
 Enter our email and password. The password should be validated based on Bean Validation rules with the help of Hibernate Validator library. It means it will be validated based on:
+
 1. Classic email regexp.
 2. **Should contain no less than 2 symbols and a "!" sign.**
 
@@ -40,6 +41,7 @@ So, we have the user's data and the user sees a "success" screen:
 ![Screenshot3](https://raw.githubusercontent.com/RamanujamTeam/RegistrationService/master/src/main/resources/img/3.png)
 
 "Check your email" means that a confirmation email should be delivered to users **real** email inbox. Use ActiveMQ broker and Spring JMS (there are plenty of tutorials on the web) to send a pretty HTML email to user. 
+
 ![Screenshot4](https://raw.githubusercontent.com/RamanujamTeam/RegistrationService/master/src/main/resources/img/4.png)
 
 The user will receive a letter saying that he has successfully registered with this email address and a password that is slightly disguised (shows only 2 last symbols).
@@ -54,6 +56,7 @@ User clicks on the link. Pay attention that the link has "/confirm" mapping and 
 **That's it!**
 After the service changed the "is_confirmed" flag to true the user is redirected to /success routes:
 ![Screenshot5](https://raw.githubusercontent.com/RamanujamTeam/RegistrationService/master/src/main/resources/img/5.png)
+
 where a long-waited link to video https://www.youtube.com/watch?v=dQw4w9WgXcQ will be waiting for him.
 
 Let's conclude:
