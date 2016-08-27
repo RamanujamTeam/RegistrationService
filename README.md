@@ -1,6 +1,7 @@
 # RegistrationService
 
 Technologies that should be used in this project:
+
 1. maven
 2. maven-jacoco-plugin with no less than 85% coverage and embedded in your main project <build> section
 3. maven-checkstyle-plugin
